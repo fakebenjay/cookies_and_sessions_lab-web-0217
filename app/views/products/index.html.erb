@@ -1,0 +1,11 @@
+<h1>Kumquattr</h1>
+<%= form_for :product do |f| %>
+<%= f.text_field :item, placeholder: "Product", id: "product" %>
+<%= f.submit "add to cart" %>
+<% end %>
+
+<br>
+
+<% @cart.each do |item| %>
+<p><%= item %></p>
+<% end %>
